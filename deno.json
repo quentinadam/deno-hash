@@ -1,0 +1,42 @@
+{
+  "name": "@quentinadam/hash",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": {
+    ".": "./mod.ts",
+    "./blake2b128": "./blake2b128.ts",
+    "./blake2b160": "./blake2b160.ts",
+    "./blake2b224": "./blake2b224.ts",
+    "./blake2b256": "./blake2b256.ts",
+    "./blake2b512": "./blake2b512.ts",
+    "./hmac-sha1": "./hmac-sha1.ts",
+    "./hmac-sha224": "./hmac-sha224.ts",
+    "./hmac-sha256": "./hmac-sha256.ts",
+    "./hmac-sha384": "./hmac-sha384.ts",
+    "./hmac-sha512": "./hmac-sha512.ts",
+    "./keccak256": "./keccak256.ts",
+    "./ripemd160": "./ripemd160.ts",
+    "./sha1": "./sha1.ts",
+    "./sha224": "./sha224.ts",
+    "./sha256": "./sha256.ts",
+    "./sha384": "./sha384.ts",
+    "./sha512": "./sha512.ts"
+  },
+  "imports": {
+    "@noble/hashes": "npm:@noble/hashes@^1.6.1",
+    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.4"
+  },
+  "publish": {
+    "exclude": [
+      ".github/",
+      ".vscode/"
+    ]
+  },
+  "fmt": {
+    "singleQuote": true,
+    "lineWidth": 120
+  },
+  "tasks": {
+    "check": "deno check **/*.ts"
+  }
+}
