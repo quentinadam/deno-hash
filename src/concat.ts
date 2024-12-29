@@ -1,4 +1,4 @@
-import Uint8ArrayExtension from '@quentinadam/uint8array-extension';
+import * as Uint8ArrayExtension from '@quentinadam/uint8array-extension';
 import type Buffer from './Buffer.ts';
 
 export default function concat(buffers: (Buffer | undefined)[]): Uint8Array {

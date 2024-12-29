@@ -1,42 +1,40 @@
 {
   "name": "@quentinadam/hash",
   "version": "0.1.0",
+  "description": "A simple hash library that wraps npm:@noble/hashes",
   "license": "MIT",
   "exports": {
-    ".": "./mod.ts",
-    "./blake2b128": "./blake2b128.ts",
-    "./blake2b160": "./blake2b160.ts",
-    "./blake2b224": "./blake2b224.ts",
-    "./blake2b256": "./blake2b256.ts",
-    "./blake2b512": "./blake2b512.ts",
-    "./hmac-sha1": "./hmac-sha1.ts",
-    "./hmac-sha224": "./hmac-sha224.ts",
-    "./hmac-sha256": "./hmac-sha256.ts",
-    "./hmac-sha384": "./hmac-sha384.ts",
-    "./hmac-sha512": "./hmac-sha512.ts",
-    "./keccak256": "./keccak256.ts",
-    "./ripemd160": "./ripemd160.ts",
-    "./sha1": "./sha1.ts",
-    "./sha224": "./sha224.ts",
-    "./sha256": "./sha256.ts",
-    "./sha384": "./sha384.ts",
-    "./sha512": "./sha512.ts"
+    ".": "./src/mod.ts",
+    "./blake2b128": "./src/blake2b128.ts",
+    "./blake2b160": "./src/blake2b160.ts",
+    "./blake2b224": "./src/blake2b224.ts",
+    "./blake2b256": "./src/blake2b256.ts",
+    "./blake2b512": "./src/blake2b512.ts",
+    "./hmac-sha1": "./src/hmac-sha1.ts",
+    "./hmac-sha224": "./src/hmac-sha224.ts",
+    "./hmac-sha256": "./src/hmac-sha256.ts",
+    "./hmac-sha384": "./src/hmac-sha384.ts",
+    "./hmac-sha512": "./src/hmac-sha512.ts",
+    "./keccak256": "./src/keccak256.ts",
+    "./ripemd160": "./src/ripemd160.ts",
+    "./sha1": "./src/sha1.ts",
+    "./sha224": "./src/sha224.ts",
+    "./sha256": "./src/sha256.ts",
+    "./sha384": "./src/sha384.ts",
+    "./sha512": "./src/sha512.ts"
   },
   "imports": {
     "@noble/hashes": "npm:@noble/hashes@^1.6.1",
-    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.4"
-  },
-  "publish": {
-    "exclude": [
-      ".github/",
-      ".vscode/"
-    ]
+    "@quentinadam/require": "jsr:@quentinadam/require@^0.1.4",
+    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.5",
+    "typescript": "npm:typescript@^5.7.2"
   },
   "fmt": {
     "singleQuote": true,
     "lineWidth": 120
   },
-  "tasks": {
-    "check": "deno check **/*.ts"
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true
   }
 }
