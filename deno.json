@@ -3,6 +3,11 @@
   "version": "0.1.1",
   "description": "A simple hash library that wraps npm:@noble/hashes",
   "license": "MIT",
+  "author": "Quentin Adam",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentinadam/deno-hash.git"
+  },
   "exports": {
     ".": "./src/mod.ts",
     "./blake2b128": "./src/blake2b128.ts",
@@ -24,7 +29,7 @@
     "./sha512": "./src/sha512.ts"
   },
   "imports": {
-    "@noble/hashes": "npm:@noble/hashes@^1.6.1",
+    "@noble/hashes": "jsr:@noble/hashes@^1.6.1",
     "@quentinadam/require": "jsr:@quentinadam/require@^0.1.4",
     "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.5",
     "typescript": "npm:typescript@^5.7.2"

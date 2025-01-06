@@ -1,15 +1,18 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@noble/hashes@^1.6.1": "1.6.1",
     "jsr:@quentinadam/assert@~0.1.10": "0.1.10",
     "jsr:@quentinadam/assert@~0.1.7": "0.1.10",
     "jsr:@quentinadam/assert@~0.1.9": "0.1.10",
     "jsr:@quentinadam/require@~0.1.4": "0.1.4",
     "jsr:@quentinadam/uint8array-extension@~0.1.5": "0.1.5",
-    "npm:@noble/hashes@^1.6.1": "1.6.1",
     "npm:typescript@^5.7.2": "5.7.2"
   },
   "jsr": {
+    "@noble/hashes@1.6.1": {
+      "integrity": "e95d233af7cc1881559e2f9f701673999e544a94f5891d68b0d54f1bb7ac9640"
+    },
     "@quentinadam/assert@0.1.10": {
       "integrity": "623eb01c4eb8bbe6420abcbc06792dbd5ca4301c270ac04b3745deac099f70df"
     },
@@ -27,18 +30,15 @@
     }
   },
   "npm": {
-    "@noble/hashes@1.6.1": {
-      "integrity": "sha512-pq5D8h10hHBjyqX+cfBm0i8JUXJ0UhczFc4r74zbuT9XgewFo2E3J1cOaGtdZynILNmQ685YWGzGE1Zv6io50w=="
-    },
     "typescript@5.7.2": {
       "integrity": "sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg=="
     }
   },
   "workspace": {
     "dependencies": [
+      "jsr:@noble/hashes@^1.6.1",
       "jsr:@quentinadam/require@~0.1.4",
       "jsr:@quentinadam/uint8array-extension@~0.1.5",
-      "npm:@noble/hashes@^1.6.1",
       "npm:typescript@^5.7.2"
     ]
   }
