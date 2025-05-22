@@ -1,4 +1,4 @@
-import { ripemd160 as hash } from '@noble/hashes/ripemd160';
+import { ripemd160 as hash } from '@noble/hashes/legacy';
 import concat from './concat.ts';
 import type Buffer from './Buffer.ts';
 

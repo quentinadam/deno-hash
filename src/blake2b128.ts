@@ -1,4 +1,4 @@
-import { blake2b as hash } from '@noble/hashes/blake2b';
+import { blake2b as hash } from '@noble/hashes/blake2';
 import concat from './concat.ts';
 import type Buffer from './Buffer.ts';
 

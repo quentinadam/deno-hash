@@ -9,6 +9,7 @@ import hmacSha256 from './hmac-sha256.ts';
 import hmacSha384 from './hmac-sha384.ts';
 import hmacSha512 from './hmac-sha512.ts';
 import keccak256 from './keccak256.ts';
+import md5 from './md5.ts';
 import ripemd160 from './ripemd160.ts';
 import sha1 from './sha1.ts';
 import sha224 from './sha224.ts';
@@ -28,6 +29,7 @@ export {
   hmacSha384,
   hmacSha512,
   keccak256,
+  md5,
   ripemd160,
   sha1,
   sha224,

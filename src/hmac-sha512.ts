@@ -1,4 +1,4 @@
-import { sha512 as hash } from '@noble/hashes/sha512';
+import { sha512 as hash } from '@noble/hashes/sha2';
 import generateHmac from './generateHmac.ts';
 import type Buffer from './Buffer.ts';
 

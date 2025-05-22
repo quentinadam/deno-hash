@@ -1,4 +1,4 @@
-import { sha256 as hash } from '@noble/hashes/sha256';
+import { sha256 as hash } from '@noble/hashes/sha2';
 import concat from './concat.ts';
 import type Buffer from './Buffer.ts';
 

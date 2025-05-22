@@ -29,7 +29,7 @@
     "./sha512": "./src/sha512.ts"
   },
   "imports": {
-    "@noble/hashes": "jsr:@noble/hashes@^1.6.1",
+    "@noble/hashes": "jsr:@noble/hashes@^1.8.0",
     "@quentinadam/require": "jsr:@quentinadam/require@^0.1.4",
     "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.5",
     "typescript": "npm:typescript@^5.7.2"
