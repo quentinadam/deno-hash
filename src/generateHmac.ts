@@ -1,4 +1,4 @@
-import ensure from '@quentinadam/require';
+import ensure from '@quentinadam/ensure';
 import Uint8ArrayExtension from '@quentinadam/uint8array-extension';
 import concat from './concat.ts';
 import type Buffer from './Buffer.ts';
