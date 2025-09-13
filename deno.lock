@@ -36,6 +36,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@noble/hashes@2",
+      "jsr:@quentinadam/assert@~0.1.12",
       "jsr:@quentinadam/ensure@~0.1.1",
       "jsr:@quentinadam/uint8array-extension@~0.1.7",
       "npm:typescript@^5.9.2"

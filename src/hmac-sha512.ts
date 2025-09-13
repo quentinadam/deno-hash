@@ -1,7 +1,8 @@
-import { sha512 as hash } from '@noble/hashes/sha2.js';
+import hash from './sha512.ts';
 import generateHmac from './generateHmac.ts';
 import type Buffer from './Buffer.ts';
+import type OptionalBuffer from './OptionalBuffer.ts';
 
-export default function hmacSha512(secret: Buffer, ...buffers: (Buffer | undefined)[]): Uint8Array<ArrayBuffer> {
-  return generateHmac(hash as (buffer: Uint8Array<ArrayBuffer>) => Uint8Array<ArrayBuffer>, 128)(secret, ...buffers);
+export default function hmacSha512(secret: Buffer, ...buffers: OptionalBuffer[]): Uint8Array<ArrayBuffer> {
+  return generateHmac(hash, 128)(secret, ...buffers);
 }
