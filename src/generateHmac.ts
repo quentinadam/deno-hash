@@ -3,8 +3,11 @@ import Uint8ArrayExtension from '@quentinadam/uint8array-extension';
 import concat from './concat.ts';
 import type Buffer from './Buffer.ts';
 
-export default function generateHmac(hash: (buffer: Uint8Array) => Uint8Array, blockSize: number) {
-  return (secret: string | Uint8Array, ...buffers: (Buffer | undefined)[]) => {
+export default function generateHmac(
+  hash: (buffer: Uint8Array<ArrayBuffer>) => Uint8Array<ArrayBuffer>,
+  blockSize: number,
+) {
+  return (secret: string | Uint8Array<ArrayBuffer>, ...buffers: (Buffer | undefined)[]) => {
     if (typeof secret === 'string') {
       secret = new TextEncoder().encode(secret);
     }

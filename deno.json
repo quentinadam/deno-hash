@@ -1,6 +1,6 @@
 {
   "name": "@quentinadam/hash",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A simple hash library that wraps npm:@noble/hashes",
   "license": "MIT",
   "author": "Quentin Adam",
@@ -30,10 +30,10 @@
     "./sha512": "./src/sha512.ts"
   },
   "imports": {
-    "@noble/hashes": "jsr:@noble/hashes@^1.8.0",
-    "@quentinadam/ensure": "jsr:@quentinadam/ensure@^0.1.0",
-    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.6",
-    "typescript": "npm:typescript@^5.8.3"
+    "@noble/hashes": "jsr:@noble/hashes@^2.0.0",
+    "@quentinadam/ensure": "jsr:@quentinadam/ensure@^0.1.1",
+    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.7",
+    "typescript": "npm:typescript@^5.9.2"
   },
   "fmt": {
     "singleQuote": true,
