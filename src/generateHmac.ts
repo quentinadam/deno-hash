@@ -2,13 +2,13 @@ import ensure from '@quentinadam/ensure';
 import Uint8ArrayExtension from '@quentinadam/uint8array-extension';
 import concat from './concat.ts';
 import type Buffer from './Buffer.ts';
-import type OptionalBuffer from './OptionalBuffer.ts';
+import type Buffers from './Buffers.ts';
 
 export default function generateHmac(
   hash: (buffer: Uint8Array<ArrayBuffer>) => Uint8Array<ArrayBuffer>,
   blockSize: number,
 ) {
-  return (secret: Buffer, ...buffers: OptionalBuffer[]) => {
+  return (secret: Buffer, ...buffers: Buffers) => {
     if (typeof secret === 'string') {
       secret = new TextEncoder().encode(secret);
     }

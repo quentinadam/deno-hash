@@ -1,8 +1,8 @@
 import { keccak_256 as hash } from '@noble/hashes/sha3.js';
 import concat from './concat.ts';
-import type OptionalBuffer from './OptionalBuffer.ts';
+import type Buffers from './Buffers.ts';
 import expectUint8Array from './expectUint8Array.ts';
 
-export default function keccak256(...buffers: OptionalBuffer[]): Uint8Array<ArrayBuffer> {
+export default function keccak256(...buffers: Buffers): Uint8Array<ArrayBuffer> {
   return expectUint8Array(hash(concat(buffers)));
 }
