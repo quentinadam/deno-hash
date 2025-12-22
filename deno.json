@@ -1,7 +1,7 @@
 {
   "name": "@quentinadam/hash",
-  "version": "0.1.8",
-  "description": "A simple hash library that wraps npm:@noble/hashes",
+  "version": "0.1.9",
+  "description": "A simple hash library that wraps jsr:@noble/hashes",
   "license": "MIT",
   "author": "Quentin Adam",
   "repository": {
@@ -33,7 +33,7 @@
     "@noble/hashes": "jsr:@noble/hashes@^2.0.1",
     "@quentinadam/assert": "jsr:@quentinadam/assert@^0.1.13",
     "@quentinadam/ensure": "jsr:@quentinadam/ensure@^0.1.2",
-    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.9",
+    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.10",
     "typescript": "npm:typescript@^5.9.3"
   },
   "fmt": {

@@ -2,7 +2,7 @@
 
 [![JSR][jsr-image]][jsr-url] [![NPM][npm-image]][npm-url] [![CI][ci-image]][ci-url]
 
-A simple hash library that wraps [npm:@noble/hashes](https://www.npmjs.com/package/@noble/hashes).
+A simple hash library that wraps [jsr:@noble/hashes](https://jsr.io/@noble/hashes).
 
 [ci-image]: https://img.shields.io/github/actions/workflow/status/quentinadam/deno-hash/ci.yml?branch=main&logo=github&style=flat-square
 [ci-url]: https://github.com/quentinadam/deno-hash/actions/workflows/ci.yml
