@@ -1,6 +1,6 @@
 {
   "name": "@quentinadam/hash",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "A simple hash library that wraps jsr:@noble/hashes",
   "license": "MIT",
   "author": "Quentin Adam",
