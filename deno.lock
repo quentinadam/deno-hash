@@ -1,15 +1,15 @@
 {
   "version": "5",
   "specifiers": {
-    "jsr:@noble/hashes@^2.0.1": "2.0.1",
+    "jsr:@noble/hashes@^2.2.0": "2.2.0",
     "jsr:@quentinadam/assert@~0.1.17": "0.1.17",
     "jsr:@quentinadam/ensure@~0.1.5": "0.1.5",
-    "jsr:@quentinadam/uint8array-extension@~0.1.13": "0.1.13",
+    "jsr:@quentinadam/uint8array-extension@~0.1.14": "0.1.14",
     "npm:typescript@^5.9.3": "5.9.3"
   },
   "jsr": {
-    "@noble/hashes@2.0.1": {
-      "integrity": "e0e908292a0bf91099cf8ba0720a1647cef82ab38b588815b5e9535b4ff4d7bb"
+    "@noble/hashes@2.2.0": {
+      "integrity": "984d0f07d004ac13a6029ef2b200651b1572fcc952be4b313ef4e312ad696189"
     },
     "@quentinadam/assert@0.1.17": {
       "integrity": "9eef3bbf11e01f89e53a3ca569a390fd9f313edfd1b962477684528bafeb9f35"
@@ -20,8 +20,8 @@
         "jsr:@quentinadam/assert"
       ]
     },
-    "@quentinadam/uint8array-extension@0.1.13": {
-      "integrity": "7d8aec5028b42876b83496066b547902d9fa7929e87b7e0f74dc4ff2847ab280",
+    "@quentinadam/uint8array-extension@0.1.14": {
+      "integrity": "64a8a1eedb7fa2947343eb6384ecd7ab50d56afdc1567fb0c640789d0f592ca4",
       "dependencies": [
         "jsr:@quentinadam/assert"
       ]
@@ -35,10 +35,10 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@noble/hashes@^2.0.1",
+      "jsr:@noble/hashes@^2.2.0",
       "jsr:@quentinadam/assert@~0.1.17",
       "jsr:@quentinadam/ensure@~0.1.5",
-      "jsr:@quentinadam/uint8array-extension@~0.1.13",
+      "jsr:@quentinadam/uint8array-extension@~0.1.14",
       "npm:typescript@^5.9.3"
     ]
   }
