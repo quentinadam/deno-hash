@@ -1,5 +1,3 @@
-import type Buffer from './Buffer.ts';
+import type { Buffer } from './Buffer.ts';
 
-type Buffers = (Buffer | undefined)[];
-
-export default Buffers;
+export type Buffers = (Buffer | undefined)[];

@@ -1,8 +1,8 @@
-import hash from './sha256.ts';
-import generateHmac from './generateHmac.ts';
-import type Buffer from './Buffer.ts';
-import type Buffers from './Buffers.ts';
+import { sha224 } from './sha224.ts';
+import { generateHmac } from './generateHmac.ts';
+import type { Buffer } from './Buffer.ts';
+import type { Buffers } from './Buffers.ts';
 
-export default function hmacSha224(secret: Buffer, ...buffers: Buffers): Uint8Array<ArrayBuffer> {
-  return generateHmac(hash, 64)(secret, ...buffers);
+export function hmacSha224(secret: Buffer, ...buffers: Buffers): Uint8Array<ArrayBuffer> {
+  return generateHmac(sha224, 64)(secret, ...buffers);
 }

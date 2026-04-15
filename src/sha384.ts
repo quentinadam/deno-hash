@@ -1,8 +1,8 @@
 import { sha384 as hash } from '@noble/hashes/sha2.js';
-import concat from './concat.ts';
-import type Buffers from './Buffers.ts';
-import expectUint8Array from './expectUint8Array.ts';
+import { concat } from './concat.ts';
+import type { Buffers } from './Buffers.ts';
+import { ensureUint8Array } from './ensureUint8Array.ts';
 
-export default function sha384(...buffers: Buffers): Uint8Array<ArrayBuffer> {
-  return expectUint8Array(hash(concat(buffers)));
+export function sha384(...buffers: Buffers): Uint8Array<ArrayBuffer> {
+  return ensureUint8Array(hash(concat(buffers)));
 }

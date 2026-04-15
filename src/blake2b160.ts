@@ -1,8 +1,8 @@
 import { blake2b as hash } from '@noble/hashes/blake2.js';
-import concat from './concat.ts';
-import type Buffers from './Buffers.ts';
-import expectUint8Array from './expectUint8Array.ts';
+import { concat } from './concat.ts';
+import type { Buffers } from './Buffers.ts';
+import { ensureUint8Array } from './ensureUint8Array.ts';
 
-export default function blake2b160(...buffers: Buffers): Uint8Array<ArrayBuffer> {
-  return expectUint8Array(hash(concat(buffers), { dkLen: 20 }));
+export function blake2b160(...buffers: Buffers): Uint8Array<ArrayBuffer> {
+  return ensureUint8Array(hash(concat(buffers), { dkLen: 20 }));
 }

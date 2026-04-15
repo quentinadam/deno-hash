@@ -1,3 +1,1 @@
-type Buffer = Uint8Array<ArrayBuffer> | string;
-
-export default Buffer;
+export type Buffer = Uint8Array | string;

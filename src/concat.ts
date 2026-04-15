@@ -1,10 +1,7 @@
-import * as Uint8ArrayExtension from '@quentinadam/uint8array-extension';
-import type Buffers from './Buffers.ts';
+import { concat as _concat } from '@quentinadam/uint8array-extension';
+import type { Buffers } from './Buffers.ts';
+import { normalizeBuffer } from './normalizeBuffer.ts';
 
-export default function concat(buffers: Buffers): Uint8Array<ArrayBuffer> {
-  return Uint8ArrayExtension.concat(
-    buffers.filter((buffer) => buffer !== undefined).map((buffer) => {
-      return typeof buffer === 'string' ? new TextEncoder().encode(buffer) : buffer;
-    }),
-  );
+export function concat(buffers: Buffers): Uint8Array<ArrayBuffer> {
+  return _concat(buffers.filter((buffer) => buffer !== undefined).map((buffer) => normalizeBuffer(buffer)));
 }
